@@ -46,3 +46,10 @@ Semantic Analyzer : See plumbing diagrams
 Code Generator : AM Stack machine code production
     gen_code ir -- Generate the stack machine code for `ir`.
 
+AM Stack Machine
+===============
+
+The AM Stack machine is designed and implemented for the CPSC411 class
+at the University of Calgary. Since I didn't write it, I can't
+distribute it :) I may adapt this to target native code at some point.
+
