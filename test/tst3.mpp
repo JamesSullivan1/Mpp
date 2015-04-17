@@ -1,0 +1,14 @@
+var x:int;
+var y:int;
+
+fun a(x:int,y:int):int
+{
+    print x;
+    print y;
+    return x;
+};
+
+read x;
+read y;
+print a(x,y);
+

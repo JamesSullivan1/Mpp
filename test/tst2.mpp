@@ -1,0 +1,9 @@
+var n:int;
+read n;
+{ var a[n]:real;
+    n:=0;
+    while n<size(a) do {read a[n]; n:=n+1;};
+    n:=0;
+    while n<size(a) do {print a[n]; n:=n+1;};
+};
+

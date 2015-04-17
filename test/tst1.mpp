@@ -1,0 +1,35 @@
+var x,y:int;
+fun exp(b:int):int
+{   var z:int;
+    if b=0 then z:= 1
+           else z:= x * exp(b-1);
+    return z;
+};
+read x;
+read y;
+print exp(y);
+
+/* Expected output:
+
+M_prog
+([M_var ("x",[],M_int),
+M_var ("x",[],M_int),
+M_fun
+("exp",[("b",0,M_int)],M_int
+,[M_var ("z",[],M_int)]
+,[M_cond
+(M_app (M_eq,[M_id("b",[]),M_ival 0]),M_ass ("z",[],M_
+ival 1),
+M_ass
+("z",[]
+M_app
+(M_mul,
+[M_id("x",[]),
+M_app
+(M_fn "exp",[M_app (M_sub,[M_id("b",[])
+,M_ival 1])])]))),
+M_return (M_id("z",[])]))],
+[M_read("x",[]),M_read("y",[])
+,M_print (M_app (M_fn "exp",[M_id("y",[])]))])
+
+*/

@@ -1,0 +1,12 @@
+var x[2]:int;
+var y[3][3]:int;
+fun addhead(x[]:int, y[][]:int):int
+{ var z:int;
+    z:= x[0] + y[0][0];
+    return z;
+};
+
+read x[0];
+read y[0][0];
+print addhead(x,y);
+

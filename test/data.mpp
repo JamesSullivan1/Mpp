@@ -1,0 +1,11 @@
+data intlist = #nil | #cons of int * intlist;
+var x:intlist;
+var y:int;
+
+read y;
+x := #cons(1,#cons(2,#cons(3,#nil)));
+case x of { #nil =>
+                { begin print "\n"; end }
+          | #cons(c,cs) =>
+                { begin print c; y:=c; x := cs; end }}; 
+
